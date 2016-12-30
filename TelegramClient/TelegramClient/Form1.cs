@@ -11,10 +11,11 @@ namespace Telegram_Client
 {
     public partial class Form1 : Form
     {
-        string apiHash = "<Your API HASH>";
+        string apiHash = "2b307ccc3fb6d0e9c38f194978dd0d94";
         int apiId = 81381;
-
+       
         private TLUser user = null;
+        private TLUser user2 = null;
         bool resultConnect = false;
         TelegramClient client = null;
         List<TLUser> recipientUserlist = null;
@@ -226,7 +227,14 @@ namespace Telegram_Client
                     if (user == null)
                     {
                         //var hash = await client.SendCodeRequestAsync(PhoneNumber); //отсылаем запрос на создании сессии 
-                        user = await client.MakeAuthAsync(MyPhoneNumber, SessionHash, Code);
+                         user = await client.MakeAuthAsync(MyPhoneNumber, SessionHash, Code);
+                        /*var password = await client.GetPasswordSetting();
+                        *     PasswordToAuthenticate = ConfigurationManager.AppSettings[nameof(PasswordToAuthenticate)];
+                        var password_str = PasswordToAuthenticate;
+
+                        user = await client.MakeAuthWithPasswordAsync(password, password_str);
+                        */
+                        //user2 = await client.MakeAuthWithPasswordAsync(new TeleSharp.TL.Account.TLPassword(), "4028");
                     }
                     if (user == null)
                     {

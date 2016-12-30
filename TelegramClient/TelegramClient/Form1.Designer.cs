@@ -38,9 +38,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAuth = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonSignIn = new System.Windows.Forms.Button();
             this.comboBox_userlist = new System.Windows.Forms.ComboBox();
             this.recipientName = new System.Windows.Forms.TextBox();
-            this.buttonSignIn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +70,6 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(101, 20);
             this.textBoxPhone.TabIndex = 2;
-            this.textBoxPhone.Text = "375296852724";
             this.textBoxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPhone_KeyPress);
             // 
             // textBoxCode
@@ -145,6 +144,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Authentificate";
             // 
+            // buttonSignIn
+            // 
+            this.buttonSignIn.Enabled = false;
+            this.buttonSignIn.Location = new System.Drawing.Point(110, 81);
+            this.buttonSignIn.Name = "buttonSignIn";
+            this.buttonSignIn.Size = new System.Drawing.Size(83, 23);
+            this.buttonSignIn.TabIndex = 9;
+            this.buttonSignIn.Text = "Sign In";
+            this.buttonSignIn.UseVisualStyleBackColor = true;
+            this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
+            // 
             // comboBox_userlist
             // 
             this.comboBox_userlist.FormattingEnabled = true;
@@ -161,17 +171,6 @@
             this.recipientName.Name = "recipientName";
             this.recipientName.Size = new System.Drawing.Size(121, 20);
             this.recipientName.TabIndex = 12;
-            // 
-            // buttonSignIn
-            // 
-            this.buttonSignIn.Enabled = false;
-            this.buttonSignIn.Location = new System.Drawing.Point(110, 81);
-            this.buttonSignIn.Name = "buttonSignIn";
-            this.buttonSignIn.Size = new System.Drawing.Size(83, 23);
-            this.buttonSignIn.TabIndex = 9;
-            this.buttonSignIn.Text = "Sign In";
-            this.buttonSignIn.UseVisualStyleBackColor = true;
-            this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
             // 
             // Form1
             // 
