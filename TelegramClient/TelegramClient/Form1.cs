@@ -13,6 +13,7 @@ namespace Telegram_Client
     {
         string apiHash = "<Your API hash>";
         int apiId = <Your api ID>;
+        //https://my.telegram.org/
        
         private TLUser user = null;
         private TLUser user2 = null;
