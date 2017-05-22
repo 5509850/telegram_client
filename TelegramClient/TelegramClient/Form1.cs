@@ -11,8 +11,8 @@ namespace Telegram_Client
 {
     public partial class Form1 : Form
     {
-        string apiHash = "2b307ccc3fb6d0e9c38f194978dd0d94";
-        int apiId = 81381;
+        string apiHash = "<Your API hash>";
+        int apiId = <Your api ID>;
        
         private TLUser user = null;
         private TLUser user2 = null;
